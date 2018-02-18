@@ -1,0 +1,24 @@
+.container {
+  border: 1px solid black;
+}
+
+.option-container {
+  display: flex;
+}
+
+.option-container .option-mark {
+  width: 5px;
+  background-color: red;
+}
+
+.option-container .option-icon {
+  flex: 1;
+}
+
+.option-container .option-text {
+  flex: 15;
+}
+
+.option-container .option-checkbox {
+  flex: 2;
+}
