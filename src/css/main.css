@@ -1,10 +1,6 @@
-.container {
-  border: 1px solid black;
-}
-
 .option-container {
   display: flex;
-  height: 40px;
+  min-height: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -23,10 +19,6 @@
   background-color: red;
 }
 
-.option-container.checked .option-checkbox {
-  background-color: red;
-}
-
 .option-container.checked .option-checkbox span {
   align-self: center;
   height: 20px;
@@ -37,30 +29,33 @@
 }
 
 .option-container .option-icon {
-  width: 40px;
-  background-size: 670px;
-  background: url(../img/icons.jpg) 0 4px;
-  background-size: 560px;
+  display: flex;
+}
+
+.option-container .option-icon img {
+  width: 30px;
+  align-self: center;
+  padding: 10px;
 }
 
 .option-container .option-text {
-  /* basis, line break*/
   flex: 1;
   align-self: center;
   text-align: center;
+  padding: 10px;
 }
 
 .option-container .option-checkbox {
   display: flex;
   justify-content: center;
   width: 40px;
-  background-color: gray;
 }
 
 .option-container .option-checkbox span {
   align-self: center;
   height: 20px;
   width: 20px;
+  border: 1px solid black;
   border-radius: 50%;
   background-color: white;
 }
